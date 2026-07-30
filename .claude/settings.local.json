@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(lsof -ti:5000)",
+      "Bash(lsof -ti:8001)",
+      "Bash(lsof -ti:8002)",
+      "WebSearch",
+      "WebFetch(domain:prsindia.org)",
+      "WebFetch(domain:openthemagazine.com)",
+      "WebFetch(domain:www.scconline.com)",
+      "Bash(mkdir -p \"Loksabha_Monsoon_Session_2026\")",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.fifa.com)",
+      "WebFetch(domain:www.lyzr.ai)",
+      "WebFetch(domain:aws.amazon.com)",
+      "WebFetch(domain:azure.microsoft.com)",
+      "WebFetch(domain:www.marvel.com)",
+      "WebFetch(domain:thewaltdisneycompany.com)",
+      "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/FastAPI practice/Avengers Doomsday\")",
+      "Bash(mkdir -p \"dark-web-research\")",
+      "WebFetch(domain:www.britannica.com)",
+      "WebFetch(domain:www.worldhistory.org)",
+      "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/FastAPI practice/History_of_India\" && ls \"/media/cynoteckdell/data/Documents/FastAPI practice/History_of_India\")",
+      "WebFetch(domain:a16z.com)",
+      "WebFetch(domain:ai.google.dev)",
+      "WebFetch(domain:my.idc.com)"
+    ],
+    "additionalDirectories": [
+      "/media/cynoteckdell/data/Documents/FastAPI practice"
+    ]
+  }
+}
