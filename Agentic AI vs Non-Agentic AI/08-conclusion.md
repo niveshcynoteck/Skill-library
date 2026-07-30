@@ -1,3 +1,0 @@
-# Conclusion
-
-**Non-agentic AI** is best suited for well-defined, single-step tasks where predictability, auditability, and low cost matter most (e.g., a classifier, a Q&A chatbot, a fixed automation script). **Agentic AI** is suited for complex, multi-step, dynamic workflows where the cost of continuous human supervision outweighs the risks of autonomous action (e.g., end-to-end coding tasks, fraud investigation, logistics rerouting) — provided adequate oversight and governance are in place. The dividing line between the two is not sharp; most real systems sit somewhere along the L0–L5 autonomy spectrum described in this report.
