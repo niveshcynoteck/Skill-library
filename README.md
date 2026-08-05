@@ -1,6 +1,6 @@
 # Skill Library
 
-A curated collection of AI agent skills and research reports for use with Claude and compatible AI assistants.
+A curated collection of AI agent skills for use with Claude and compatible AI assistants.
 
 ---
 
