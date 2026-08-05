@@ -10,6 +10,7 @@ description: |
 - Gain a full understanding of the given content before generating the visualization. 
 - Choose the most suitable visualization format based on the content. 
 - Keep the visualization simple, clear, and easy to understand. 
+- If the visualization becomes too complex, break it down into multiple smaller, logically grouped sections within the same diagram to improve clarity and make it easier to understand.
 - Highlight the most important information. 
 - Do not add data or facts by yourself. 
 - Use meaningful labels, legends and titles. 
