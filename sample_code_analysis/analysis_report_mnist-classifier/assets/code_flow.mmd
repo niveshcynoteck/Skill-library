@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant U as User
+    participant C as Canvas (st_canvas)
+    participant A as App (app.py)
+    participant M as Model (model.pkl)
+    
+    U->>C: Draws digit (0-9)
+    C-->>A: Returns image_data (RGBA array)
+    A->>A: Convert to PIL Image (grayscale)
+    A->>A: Resize to 28x28
+    A->>A: Normalize pixel values (0-1)
+    A->>A: Reshape to (1, 28, 28, 1)
+    A->>M: Load model (pickle.load)
+    M-->>A: Returns Keras model
+    U->>A: Clicks "Predict Digit"
+    A->>A: model.predict(img_reshaped)
+    A->>A: np.argmax(predictions)
+    A->>A: Calculate confidence
+    A->>U: Display prediction + confidence + bar chart

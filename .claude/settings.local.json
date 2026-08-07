@@ -23,7 +23,18 @@
       "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/FastAPI practice/History_of_India\" && ls \"/media/cynoteckdell/data/Documents/FastAPI practice/History_of_India\")",
       "WebFetch(domain:a16z.com)",
       "WebFetch(domain:ai.google.dev)",
-      "WebFetch(domain:my.idc.com)"
+      "WebFetch(domain:my.idc.com)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(make test *)",
+      "Bash(.venv/bin/pytest *)",
+      "Bash(.venv/bin/flake8 *)",
+      "Bash(cd \"/media/cynoteckdell/data/Documents/inbox-curator\" && echo \"--- README ---\" && cat README.md && echo \"--- requirements.txt ---\" && cat requirements.txt && echo \"--- src tree ---\" && find src -type f -name \"*.py\" | sort && echo \"--- tests tree ---\" && find tests -type f | sort)",
+      "Read(//media/cynoteckdell/data/Documents/inbox-curator/**)",
+      "Bash(.venv/bin/pip list *)",
+      "Bash(.venv/bin/python -m pytest -q)",
+      "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/inbox-curator/analysis_report_inbox-curator/assets\" \"/media/cynoteckdell/data/Documents/inbox-curator/analysis_report_inbox-curator/testing/assets\")",
+      "Bash(.venv/bin/python -m pytest -q --cov-report=html:analysis_report_inbox-curator/testing/htmlcov)"
     ],
     "additionalDirectories": [
       "/media/cynoteckdell/data/Documents/FastAPI practice"

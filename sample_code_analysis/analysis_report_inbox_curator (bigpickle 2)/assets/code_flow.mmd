@@ -1,0 +1,22 @@
+flowchart TD
+    A["EmailCurator.task()"] --> B["EmailFetch.task()"]
+    B --> C{"access_token set?"}
+    C -- "no" --> E1["ValueError: task fails"]
+    C -- "yes" --> D["GET emails from Graph API<br/>(paginated via @odata.nextLink)"]
+    D --> N["text_normalization()<br/>subtract_hours_from_iso()"]
+    N --> E["rpush one JSON object per email<br/>to Redis list 'emails'"]
+    E --> F["fetch_filters()  ->  context"]
+    F --> G{"context is None?<br/>(filter API down)"}
+    G -- "yes" --> E2["TypeError: 'NoneType' is not subscriptable<br/>(unhandled, task crashes)"]
+    G -- "no" --> H["Batch loop: lrange(0,99) + ltrim(99,-1)<br/>(off-by-one -> duplicates)"]
+    H --> I["DeleteHandler<br/>remove emails from emailsToRemove"]
+    I --> J{"DELETE returned 204?"}
+    J -- "no" --> K["rpush json.dumps(emails)<br/>whole list stored as ONE entry (malformed)"]
+    J -- "yes" --> L["BounceHandler<br/>detect bounces via from-address match"]
+    L --> M["GroupHandler<br/>keyword matching in subject/body"]
+    M --> P["POST grouped emails<br/>to Grouped-emails API"]
+    P -- "201" --> Q["Done"]
+    P -- "not 201" --> K
+
+    classDef err fill:#fce8e6,stroke:#d93025
+    class E1,E2,K err

@@ -1,0 +1,23 @@
+graph TD
+    A[User] --> B[Streamlit Web App - app.py]
+    B --> C[Drawing Canvas<br/>streamlit-drawable-canvas]
+    C --> D[User Draws Digit]
+    D --> E[Preprocessing]
+    E --> F[Resize to 28x28<br/>Normalize 0-1<br/>Reshape to (1,28,28,1)]
+    F --> G[Load Model<br/>model.pkl]
+    G --> H[Keras CNN Model<br/>2 Conv2D + MaxPool<br/>Dense + Softmax]
+    H --> I[Prediction]
+    I --> J[Display Results<br/>Predicted Digit<br/>Confidence %<br/>Class Probabilities]
+    
+    K[train.py] --> L[Load MNIST Data]
+    L --> M[Preprocess Data<br/>Normalize + Reshape]
+    M --> N[Build CNN Model]
+    N --> O[Compile<br/>Adam + Sparse Categorical Crossentropy]
+    O --> P[Train 5 Epochs]
+    P --> Q[Evaluate on Test Set]
+    Q --> R[Save model.pkl<br/>pickle.dump]
+    
+    style B fill:#e1f5fe
+    style H fill:#fff3e0
+    style K fill:#e8f5e9
+    style R fill:#fff3e0

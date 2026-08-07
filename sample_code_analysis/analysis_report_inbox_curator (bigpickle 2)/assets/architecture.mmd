@@ -1,0 +1,29 @@
+flowchart LR
+    subgraph entry["Entry point  src/app.py"]
+        app_tr["TokenRefresh<br/>(token_refreshing)"]
+        app_ec["EmailCurator<br/>(email_processing)"]
+    end
+
+    app_tr -->|"refresh_token grant"| auth["Token endpoint"]
+    app_tr -- "update(access_token)" --> ef["EmailFetch"]
+    app_tr -- "update(access_token)" --> dh["DeleteHandler"]
+
+    ef -->|"GET emails"| msgraph["Microsoft Graph API"]
+    ef -->|"rpush JSON per email"| rds[("Redis list 'emails'<br/>port 6380")]
+
+    app_ec -->|"fetch_filters()"| filt["Filter API"]
+    app_ec -->|"lrange/ltrim<br/>batches of 100"| rds
+    app_ec -->|"handle(emails, context)"| chain
+
+    subgraph chain["Chain of Responsibility"]
+        dh --> bh["BounceHandler"] --> gh["GroupHandler"]
+    end
+
+    dh -->|"DELETE /emails/{id}"| msgraph
+    bh -->|"POST"| bounceapi["Bounced-emails API"]
+    gh -->|"POST"| groupapi["Grouped-emails API"]
+
+    classDef api fill:#e8f0fe,stroke:#4285f4
+    class auth,msgraph,filt,bounceapi,groupapi api
+    classDef infra fill:#fef7e0,stroke:#f9ab00
+    class rds infra

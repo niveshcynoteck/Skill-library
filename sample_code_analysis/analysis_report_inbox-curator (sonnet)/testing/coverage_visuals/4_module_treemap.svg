@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="595.922812pt" height="455.184pt" viewBox="0 0 595.922812 455.184" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-07T10:53:37.749101</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 455.184 
+L 595.922812 455.184 
+L 595.922812 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 90.590781 447.984 
+L 240.895505 447.984 
+L 240.895505 33.24275 
+L 90.590781 33.24275 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #a9da6c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 240.895505 447.984 
+L 505.332031 447.984 
+L 505.332031 315.931951 
+L 240.895505 315.931951 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #f2faae; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 240.895505 315.931951 
+L 505.332031 315.931951 
+L 505.332031 235.722558 
+L 240.895505 235.722558 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #82c966; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 240.895505 235.722558 
+L 330.318485 235.722558 
+L 330.318485 33.24275 
+L 240.895505 33.24275 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #5ab760; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 330.318485 235.722558 
+L 505.332031 235.722558 
+L 505.332031 178.082321 
+L 330.318485 178.082321 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #7ac665; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 330.318485 178.082321 
+L 394.609175 178.082321 
+L 394.609175 33.24275 
+L 330.318485 33.24275 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #07753e; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 394.609175 178.082321 
+L 505.332031 178.082321 
+L 505.332031 98.654169 
+L 394.609175 98.654169 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #69be63; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 394.609175 98.654169 
+L 505.332031 98.654169 
+L 505.332031 33.24275 
+L 394.609175 33.24275 
+z
+" clip-path="url(#p39f057b8ab)" style="fill: #006837; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(135.224393 237.014)">EmailFilter</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(120.275956 249.7315)">241 stmts · 69%</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(275.210643 378.219538)">Root src (app / delete_api / logger)</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(327.646581 391.215163)">135 stmts · 53%</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(329.120018 272.22788)">TokenRefresher</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(331.125487 284.94538)">82 stmts · 76%</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(248.801526 130.883279)">EmailFetcher</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(243.618714 143.600779)">70 stmts · 81%</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(397.968305 203.663002)">Utilities</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(380.035805 215.108752)">39 stmts · 77%</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(329.35508 102.423098)">EmailCurator</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(324.674377 113.868848)">36 stmts · 97%</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(421.745603 134.76887)">Scheduler</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(407.982322 147.48637)">34 stmts · 79%</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(433.651775 62.673866)">Config</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(409.050135 74.189928)">28 stmts · 100%</text>
+   </g>
+  </g>
+  <g id="text_9">
+   <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="297.961406" y="17.837812" transform="rotate(-0 297.961406 17.837812)">Statement Share by Module — Sized by Statements, Colored by Coverage</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p39f057b8ab">
+   <rect x="90.590781" y="33.24275" width="414.74125" height="414.74125"/>
+  </clipPath>
+ </defs>
+</svg>

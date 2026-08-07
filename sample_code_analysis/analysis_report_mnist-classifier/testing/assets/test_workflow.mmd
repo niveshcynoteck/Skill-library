@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant Dev as Developer
+    participant CI as CI/CD
+    participant Test as Pytest
+    participant Cov as Coverage
+    participant Report as HTML Report
+    
+    Dev->>CI: Push code
+    CI->>Test: Run pytest
+    Test->>Test: Execute unit tests
+    Test->>Test: Execute integration tests
+    Test->>Cov: Collect coverage
+    Cov->>Report: Generate HTML
+    Report->>Dev: Coverage dashboard

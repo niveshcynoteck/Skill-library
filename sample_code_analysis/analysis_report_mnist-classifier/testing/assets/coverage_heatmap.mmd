@@ -1,0 +1,13 @@
+graph TD
+    subgraph "Target Coverage by Module"
+        A[app.py - 85%]:::target
+        B[train.py - 85%]:::target
+        C[preprocessing - 95%]:::critical
+        D[model_loading - 95%]:::critical
+        E[prediction - 90%]:::critical
+        F[training_pipeline - 80%]:::high
+    end
+    
+    classDef target fill:#fff3e0,stroke:#f57c00
+    classDef critical fill:#c8e6c9,stroke:#2e7d32
+    classDef high fill:#e3f2fd,stroke:#1565c0

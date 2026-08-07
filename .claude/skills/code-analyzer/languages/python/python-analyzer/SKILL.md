@@ -17,7 +17,6 @@ While analyzing Python code, consider following:
 - PEP 257 (Docstrings)
 - Type Hints
 
-
 ## Analyze
 
 Review the code for:

@@ -25,7 +25,21 @@ description: |
 	- Sequence diagram 
 	- Architecture diagram
 
-**Important:** Select the visualization that makes the information easiest to understand. Multiple visualizations may be generated if they improve clarity.
+**Important:**
+- Ensure all text within generated visuals is clearly visible, well-spaced, and distinct. Prevent text overlap, crowding, or placement that makes labels difficult to read.
+
+- Select the visualization that makes the information easiest to understand. Multiple visualizations may be generated if they improve clarity.
+
+## Validation
+
+After generating the visualization:
+
+- Verify that the generated image correctly represents the provided data and information.
+- Check that all text, labels, legends, and titles are clearly visible and readable.
+- Verify that there is no text overlap, clipping, crowding, or missing information.
+- Check that the diagram structure and relationships are logically correct.
+- If any issue is found, regenerate or revise the visualization before presenting it to the user.
+- Do not present a visualization that is unclear, unreadable, or incorrectly represents the provided information.
 
 ## Guidelines for Output format Selection
 - Recommend the best output format (e.g., SVG, PNG, HTML, Markdown, PDF) based on the content and use case.

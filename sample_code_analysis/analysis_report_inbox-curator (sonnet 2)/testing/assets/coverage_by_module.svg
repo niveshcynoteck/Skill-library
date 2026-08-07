@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" font-family="Segoe UI, Arial, sans-serif">
+  <style>
+    .bar-low { fill: #e05252; }
+    .bar-mid { fill: #e0a952; }
+    .bar-high { fill: #4caf7d; }
+    .label { fill: #222; font-size: 13px; }
+    .value { fill: #222; font-size: 12px; }
+    .title { fill: #111; font-size: 18px; font-weight: 600; }
+    .gridline { stroke: #ddd; stroke-width: 1; }
+    @media (prefers-color-scheme: dark) {
+      .label, .value, .title { fill: #eee; }
+      .gridline { stroke: #444; }
+    }
+  </style>
+  <rect width="900" height="480" fill="transparent"/>
+  <text x="20" y="28" class="title">Test Coverage by Module (src/)</text>
+
+  <!-- gridlines at 0,25,50,75,100% -->
+  <g>
+    <line x1="260" y1="50" x2="260" y2="450" class="gridline"/>
+    <line x1="410" y1="50" x2="410" y2="450" class="gridline"/>
+    <line x1="560" y1="50" x2="560" y2="450" class="gridline"/>
+    <line x1="710" y1="50" x2="710" y2="450" class="gridline"/>
+    <line x1="860" y1="50" x2="860" y2="450" class="gridline"/>
+    <text x="257" y="465" class="value" text-anchor="middle">0%</text>
+    <text x="410" y="465" class="value" text-anchor="middle">25%</text>
+    <text x="560" y="465" class="value" text-anchor="middle">50%</text>
+    <text x="710" y="465" class="value" text-anchor="middle">75%</text>
+    <text x="855" y="465" class="value" text-anchor="middle">100%</text>
+  </g>
+
+  <!-- bars: x0=260, scale = 6 px per % -->
+  <!-- app.py 0% -->
+  <text x="250" y="68" class="label" text-anchor="end">app.py</text>
+  <rect x="260" y="58" width="1" height="18" class="bar-low"/>
+  <text x="266" y="72" class="value">0%</text>
+
+  <!-- delete_api.py 0% -->
+  <text x="250" y="98" class="label" text-anchor="end">delete_api.py</text>
+  <rect x="260" y="88" width="1" height="18" class="bar-low"/>
+  <text x="266" y="102" class="value">0%</text>
+
+  <!-- getfilters.py 38.5% -->
+  <text x="250" y="128" class="label" text-anchor="end">Utilities/getfilters.py</text>
+  <rect x="260" y="118" width="231" height="18" class="bar-low"/>
+  <text x="496" y="132" class="value">38.5%</text>
+
+  <!-- GroupingHandler 59.8% -->
+  <text x="250" y="158" class="label" text-anchor="end">EmailFilter/GroupingHandler.py</text>
+  <rect x="260" y="148" width="359" height="18" class="bar-mid"/>
+  <text x="624" y="162" class="value">59.8%</text>
+
+  <!-- DeleteHandler 66.7% -->
+  <text x="250" y="188" class="label" text-anchor="end">EmailFilter/DeleteHandler.py</text>
+  <rect x="260" y="178" width="400" height="18" class="bar-mid"/>
+  <text x="665" y="192" class="value">66.7%</text>
+
+  <!-- BaseHandler 75.0% -->
+  <text x="250" y="218" class="label" text-anchor="end">EmailFilter/BaseHandler.py</text>
+  <rect x="260" y="208" width="450" height="18" class="bar-mid"/>
+  <text x="715" y="222" class="value">75.0%</text>
+
+  <!-- TokenRefresher 75.6% -->
+  <text x="250" y="248" class="label" text-anchor="end">TokenRefresher/TokenRefresher.py</text>
+  <rect x="260" y="238" width="454" height="18" class="bar-mid"/>
+  <text x="719" y="252" class="value">75.6%</text>
+
+  <!-- scheduler.py 79.4% -->
+  <text x="250" y="278" class="label" text-anchor="end">Scheduler/scheduler.py</text>
+  <rect x="260" y="268" width="476" height="18" class="bar-mid"/>
+  <text x="741" y="282" class="value">79.4%</text>
+
+  <!-- EmailFetcher 81.4% -->
+  <text x="250" y="308" class="label" text-anchor="end">EmailFetcher/EmailFetcher.py</text>
+  <rect x="260" y="298" width="488" height="18" class="bar-mid"/>
+  <text x="753" y="312" class="value">81.4%</text>
+
+  <!-- logger.py 85.7% -->
+  <text x="250" y="338" class="label" text-anchor="end">logger.py</text>
+  <rect x="260" y="328" width="514" height="18" class="bar-high"/>
+  <text x="779" y="342" class="value">85.7%</text>
+
+  <!-- BounceHandler 91.1% -->
+  <text x="250" y="368" class="label" text-anchor="end">EmailFilter/BounceHandler.py</text>
+  <rect x="260" y="358" width="547" height="18" class="bar-high"/>
+  <text x="812" y="372" class="value">91.1%</text>
+
+  <!-- text_processing 92.3% -->
+  <text x="250" y="398" class="label" text-anchor="end">Utilities/text_processing.py</text>
+  <rect x="260" y="388" width="554" height="18" class="bar-high"/>
+  <text x="819" y="402" class="value">92.3%</text>
+
+  <!-- EmailCurator 97.2% -->
+  <text x="250" y="428" class="label" text-anchor="end">EmailCurator/EmailCurator.py</text>
+  <rect x="260" y="418" width="583" height="18" class="bar-high"/>
+  <text x="848" y="432" class="value">97.2%</text>
+
+  <text x="20" y="470" class="value">Overall project coverage: 72% (665 statements, 187 missed) · isotimestamp.py &amp; pathmaker.py: 100%</text>
+</svg>

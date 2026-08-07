@@ -1,0 +1,7 @@
+# Minimal direct dependencies for the current API style after removing the
+# unused Text Analytics imports. Keep these versions until upgrade tests exist.
+azure-core==1.30.2
+azure-search-documents==11.4.0
+openai==1.35.3
+pinecone-client[grpc]==4.1.2
+python-dotenv==1.0.1

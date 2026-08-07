@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inbox Curator — Architecture</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; background: #fff; color: #111; margin: 2rem; }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  .mermaid { margin: 1.5rem 0; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; color: #eee; }
+  }
+</style>
+</head>
+<body>
+<h1>Inbox Curator — Architecture &amp; Flow Diagrams</h1>
+
+<h2>1. Component / Design-Pattern Map</h2>
+<pre class="mermaid">
+graph TB
+  subgraph Scheduling
+    BS["BaseScheduler (ABC, Celery app singleton)"]
+  end
+
+  subgraph Auth["Observer: Subject"]
+    TR["TokenRefresh"]
+    TOK["Tokens (pickle load/save)"]
+  end
+
+  subgraph Pipeline["Chain of Responsibility"]
+    EC["EmailCurator (orchestrator)"]
+    EF["EmailFetch (Observer)"]
+    DH["DeleteHandler (Observer)"]
+    BH["BounceHandler"]
+    GH["GroupHandler"]
+  end
+
+  subgraph Infra
+    REDIS[(Redis - queue 'emails')]
+    CFG["Settings (pydantic, singleton)"]
+    LOG["JSJD_logger (singleton)"]
+  end
+
+  subgraph External["External APIs"]
+    GRAPH["Microsoft Graph API"]
+    FILTERAPI["Filter/Groups API"]
+    BOUNCEAPI["Bounce API"]
+    GROUPAPI["Group API"]
+    AAD["Azure AD token endpoint"]
+  end
+
+  BS -->|extends| TR
+  BS -->|extends| EC
+  TR -->|register_observer| EF
+  TR -->|register_observer| DH
+  TR -->|notify: update(token)| EF
+  TR -->|notify: update(token)| DH
+  TR --> TOK
+  TR -->|refresh| AAD
+
+  EC --> EF
+  EC --> DH
+  DH --> BH
+  BH --> GH
+
+  EF -->|fetch paginated| GRAPH
+  EF -->|rpush json| REDIS
+  EC -->|lrange/ltrim batch of 100| REDIS
+  DH -->|DELETE /messages/id| GRAPH
+  DH -.->|push back on failure| REDIS
+  BH -->|POST bounced batch| BOUNCEAPI
+  BH -.->|push back on failure| REDIS
+  GH -->|POST grouped batch| GROUPAPI
+  GH -.->|push back on failure| REDIS
+  EC -->|GET context| FILTERAPI
+
+  CFG -.->|env config| EF
+  CFG -.->|env config| DH
+  CFG -.->|env config| BH
+  CFG -.->|env config| GH
+  CFG -.->|env config| TR
+  LOG -.->|logging| EF
+  LOG -.->|logging| DH
+  LOG -.->|logging| BH
+  LOG -.->|logging| GH
+  LOG -.->|logging| TR
+  LOG -.->|logging| EC
+</pre>
+
+<h2>2. Token Refresh Sequence (runs every 50 min + once at startup)</h2>
+<pre class="mermaid">
+sequenceDiagram
+  participant Celery as Celery Beat
+  participant TR as TokenRefresh
+  participant Disk as tokens.pkl
+  participant AAD as Azure AD
+  participant EF as EmailFetch
+  participant DH as DeleteHandler
+
+  Celery->>TR: task()
+  TR->>Disk: get_tokens() [pickle.load]
+  TR->>AAD: POST refresh_token grant
+  AAD-->>TR: access_token, refresh_token
+  TR->>Disk: save_tokens() [pickle.dump]
+  TR->>EF: update(access_token)
+  TR->>DH: update(access_token)
+</pre>
+
+<h2>3. Daily Email Processing Sequence</h2>
+<pre class="mermaid">
+sequenceDiagram
+  participant Celery as Celery Beat
+  participant EC as EmailCurator
+  participant EF as EmailFetch
+  participant Graph as MS Graph API
+  participant Redis
+  participant FilterAPI
+  participant Chain as DeleteHandler-&gt;BounceHandler-&gt;GroupHandler
+
+  Celery->>EC: task()
+  EC->>EF: task()
+  loop while @odata.nextLink
+    EF->>Graph: GET messages (paginated)
+    Graph-->>EF: page of emails
+    EF->>Redis: rpush email JSON
+  end
+  EC->>FilterAPI: fetch_filters()
+  FilterAPI-->>EC: groups/keywords/delete-list context
+  loop until all emails processed
+    EC->>Redis: lrange 0..99 + ltrim
+    Redis-->>EC: batch of up to 100 emails
+    EC->>Chain: handle(batch, context)
+    Chain->>Graph: DELETE matched senders
+    Chain->>Chain: identify bounces, extract original sender
+    Chain->>Chain: POST bounced batch
+    Chain->>Chain: assign groups by keyword
+    Chain->>Chain: POST grouped batch
+  end
+</pre>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'default' });
+</script>
+</body>
+</html>

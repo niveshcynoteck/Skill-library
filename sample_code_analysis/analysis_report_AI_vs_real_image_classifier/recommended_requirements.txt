@@ -1,0 +1,12 @@
+# Minimal direct dependencies after migrating off the deprecated Keras 2 image APIs.
+# The current code uses tf.keras.preprocessing.image.ImageDataGenerator / flow_from_directory,
+# load_img, and img_to_array, all deprecated in TensorFlow 2.13+. Keep a pinned TensorFlow
+# that still ships those APIs until the migration to Keras 3 (tf.keras.utils.image_dataset_from_directory
+# + Rescaling layers) is complete. scikit-learn and numpy are imported by the code but were
+# previously missing from requirements.txt.
+tensorflow==2.15.1
+scikit-learn==1.3.2
+numpy>=1.24,<2
+
+# Development/test (add only after approval):
+# pytest
