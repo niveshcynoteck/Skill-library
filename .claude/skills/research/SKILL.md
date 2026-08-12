@@ -34,17 +34,28 @@ Before starting the research, create a research plan by identifying the key area
 - Include references for important claims. 
 - If information cannot be verified, explicitly mention it.
 
-## Tip: Visual Representations for Better Understanding
+## Visual-First Approach
 
-Whenever the research contains information that can be better understood visually (e.g., statistical data, comparisons, workflows, architectures, timelines, processes, or structured data), use the `image-maker` skill.
+Take a visual-first approach when preparing the research. Whenever information can be understood more clearly through a visual representation, identify the opportunity and suggest it to the user.
 
-Consider visuals not only for numerical data, but also for comparisons, trends, relationships, processes, workflows, architectures, timelines, and other complex or non-numeric information.
+Consider visuals for numerical and non-numerical information, including:
+
+- Data, statistics, values, and trends.
+- Comparisons between technologies, products, or concepts.
+- Relationships between concepts or entities.
+- Processes, workflows, and architectures.
+- Timelines and historical developments.
+- Complex or structured information.
+
+When a visual representation is appropriate:
 
 - Provide the `image-maker` skill with the relevant data and context.
 - Allow the `image-maker` skill to recommend the most suitable visualization format.
-- Embed the generated visual representation whenever it belongs and improves clarity and understanding.
+- Ask the user whether they want the suggested visual representation to be included.
+- Generate and embed the visual only after the user confirms.
+- Do not generate unnecessary visuals.
 
-**IMPORTANT:** Take a visual-first approach when preparing the research. Identify information that can be understood more clearly through diagrams, charts, flowcharts, timelines, or other visualizations. Recommend the appropriate visuals using the image-maker skill and obtain the user's confirmation before generating them.
+**IMPORTANT:** Always consider visual representation before finalizing the research. The user must confirm before any visualization is generated or included.
 
 
 ## Reference Validation
