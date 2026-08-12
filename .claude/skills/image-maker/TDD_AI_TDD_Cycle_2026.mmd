@@ -1,0 +1,27 @@
+flowchart TD
+    A[Requirements & Specifications] --> B[Red Phase: Write Failing Test]
+    B --> C[Define Statistical Success Criteria]
+    C --> D[Prepare Diverse Test Datasets]
+    D --> E[Green Phase: Minimal Implementation]
+    E --> F[Refactor Phase: Clean Code]
+    F --> G[Monitor Phase: Production Validation]
+    G --> H{Quality Gates Pass?}
+    H -->|Yes| I[Deploy to Production]
+    H -->|No| B
+    I --> J[Continuous Monitoring]
+    J --> K[Drift Detection]
+    K --> L[Automated Retraining Trigger]
+    L --> B
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#fff3e0
+    style D fill:#fff3e0
+    style E fill:#e8f5e9
+    style F fill:#e8f5e9
+    style G fill:#f3e5f5
+    style H fill:#fff8e1
+    style I fill:#e8f5e9
+    style J fill:#f3e5f5
+    style K fill:#ffebee
+    style L fill:#ffebee

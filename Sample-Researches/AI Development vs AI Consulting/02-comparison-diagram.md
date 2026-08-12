@@ -1,0 +1,41 @@
+# 2. The Comparison Diagram
+
+```mermaid
+flowchart TB
+    TITLE["AI Development vs AI Consulting"]
+
+    subgraph CONSULTANT[AI Consultant]
+        direction TB
+        C1["Answers: WHAT &amp; WHY — should we do this?"]
+        C2["Main output: strategy, roadmap, decisions"]
+        C3["Daily work: meetings, documents, stakeholder alignment"]
+        C4["Core skills: business acumen, communication, change mgmt, AI literacy"]
+        C5["Pay: employed median ~$207K; independent $150–$300/hr"]
+        C6["Best when: direction is unclear, use cases unranked"]
+    end
+
+    subgraph DEVELOPER[AI Developer / AI Engineer]
+        direction TB
+        D1["Answers: HOW — build and ship it"]
+        D2["Main output: working software, deployed systems"]
+        D3["Daily work: code, prompts, logs, tests, monitoring"]
+        D4["Core skills: Python, ML frameworks, RAG, MLOps, cloud"]
+        D5["Pay: avg ~$231K (AI engineer, US job listings)"]
+        D6["Best when: requirements are defined, strategy set"]
+    end
+
+    TITLE --> CONSULTANT
+    TITLE --> DEVELOPER
+
+    C1 -.->|"hands off plan"| D1
+    C6 -.->|"sequence: consult first, then build"| D6
+
+    style TITLE fill:#2c3e50,color:#ffffff
+    style CONSULTANT fill:#e3f2fd,color:#0b3954
+    style DEVELOPER fill:#e8f5e9,color:#1b5e20
+```
+
+## Notes
+
+- This diagram was validated by rendering it through the Mermaid CLI (exit code 0).
+- The Mermaid source is also saved at `assets/ai_development_vs_consulting.mmd` for reuse.

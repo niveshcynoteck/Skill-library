@@ -1,0 +1,26 @@
+# Validated References
+
+1. [Smithsonian: Introduction to Human Evolution](https://humanorigins.si.edu/education/introduction-human-evolution)
+2. [Smithsonian: Human Evolution FAQ](https://humanorigins.si.edu/education/frequently-asked-questions)
+3. [Smithsonian: Human Fossil Species](https://humanorigins.si.edu/evidence/human-fossils/species)
+4. [Natural History Museum: The Origin of Our Species](https://www.nhm.ac.uk/discover/the-origin-of-our-species.html)
+5. [Smithsonian: Walking Upright](https://humanorigins.si.edu/human-characteristics/walking-upright)
+6. [Smithsonian: Brains](https://humanorigins.si.edu/human-characteristics/brains)
+7. [Smithsonian: Tools and Food](https://humanorigins.si.edu/human-characteristics/tools-food)
+8. [Smithsonian: Language and Symbols](https://humanorigins.si.edu/human-characteristics/language-symbols)
+9. [Smithsonian: Social Life](https://humanorigins.si.edu/human-characteristics/social-life)
+10. [Smithsonian: *Homo sapiens*](https://humanorigins.si.edu/evidence/human-fossils/species/homo-sapiens)
+11. [Hublin et al.: Jebel Irhoud fossils](https://doi.org/10.1038/nature22336)
+12. [Vidal et al.: Age of Omo I](https://doi.org/10.1038/s41586-021-04275-8)
+13. [Scerri et al.: Pan-African origins model](https://doi.org/10.1016/j.tree.2018.05.005)
+14. [Harmand et al.: Lomekwi stone tools](https://doi.org/10.1038/nature14464)
+15. [Natural History Museum: Modern Human Evolution](https://www.nhm.ac.uk/discover/modern-humans-homo-sapiens-when-where-how-did-we-evolve.html)
+16. [Smithsonian: Ancient DNA and Neanderthals](https://humanorigins.si.edu/evidence/genetics/ancient-dna-and-neanderthals)
+17. [NHGRI: Complete Neanderthal Genome Sequenced](https://www.genome.gov/27539119/2010-release-complete-neanderthal-genome-sequenced)
+18. [Reich et al.: Denisovan genome](https://doi.org/10.1038/nature09710)
+19. [Slon et al.: Neanderthal-Denisovan offspring](https://doi.org/10.1038/s41586-018-0455-x)
+20. [Huerta-Sanchez et al.: Denisovan-related EPAS1 adaptation](https://doi.org/10.1038/nature13408)
+21. [Smithsonian: Dating Human-Evolution Evidence](https://humanorigins.si.edu/evidence/dating)
+22. [National Park Service: White Sands Footprints](https://www.nps.gov/whsa/learn/nature/fossilized-footprints.htm)
+
+Every reference was checked before inclusion. Four additional publisher endpoints returned HTTP 403 during automated validation. They were excluded or replaced with accessible institutional sources and remain marked `FALSE` in `validated_links.csv` for transparency.

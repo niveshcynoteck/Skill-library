@@ -1,0 +1,18 @@
+Name|Information|URL|Valid
+Kent Beck - Canon TDD|Kent Beck's canonical definition of red-green-refactor TDD and common mistakes|https://newsletter.kentbeck.com/p/canon-tdd|TRUE
+IEEE TSE - TDD meta-analysis|Meta-analysis of TDD effectiveness on quality and productivity|https://ieeexplore.ieee.org/document/6197200/|TRUE
+Opsera - AI Coding Impact 2026 Benchmark Report|250k+ developers; time-to-PR down 58%, AI PRs wait 4.6x longer, +15-18% security vulnerabilities|https://opsera.ai/resources/report/ai-coding-impact-2026-benchmark-report/|TRUE
+New Relic - 2026 State of AI Coding|94% rate AI code higher quality at review; 78% more incidents; 62% ship without line-by-line verification|https://newrelic.com/sites/default/files/2026-06/New-Relic-2026-AI-Code-Report-06-09-2026.pdf|TRUE
+DORA - 2025 State of AI-assisted Software Engineering|AI as an amplifier; 62% of test-writing developers use AI; ~30% trust AI little/none|https://dora.dev/dora-report-2025/|TRUE
+Asleep at the Keyboard|~40% of 1,689 Copilot-generated programs contain vulnerabilities|https://arxiv.org/abs/2108.09293|TRUE
+USENIX Security 25 - Package Hallucinations|5.2% commercial / 21.7% open-source hallucinated packages across 16 LLMs (576k samples)|https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen|TRUE
+arXiv 2607.22883 - Misguidance Effect of Buggy Code|Buggy code steers LLMs to misguided unit tests; spec-docstring prompting mitigates it|https://arxiv.org/abs/2607.22883|TRUE
+arXiv 2604.05292 - Broken by Default|55.8% vulnerability rate in LLM-generated code; FormAI 62.07%|https://arxiv.org/abs/2604.05292|TRUE
+Microsoft - Spec-Driven Development|Specs as shared source of truth; align-first vs prompt-first for AI engineering|https://developer.microsoft.com/blog/spec-driven-development-ai-native-engineering/|TRUE
+The Pragmatic Engineer - Kent Beck interview|Kent Beck: TDD is a superpower with AI agents; agents delete/change tests causing regressions|https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent|TRUE
+Kent Beck - Augmented Coding: Beyond the Vibes|Building BPlusTree with an agent constrained to Red-Green-Refactor + Tidy First|https://newsletter.kentbeck.com/p/augmented-coding-beyond-the-vibes|TRUE
+Jason Gorman - Why TDD Works So Well in AI-Assisted Programming|Developers rediscovering XP practices via AI; ~8% of ~1,500 devs actually practice TDD|https://codemanship.wordpress.com/2026/01/09/why-does-test-driven-development-work-so-well-in-ai-assisted-programming/|TRUE
+Martin Fowler - TDD and AI fragments|TDD made agent workflow sustainable; insisting Claude Code follow red-green-refactor|https://martinfowler.com/fragments/2026-01-08.html|TRUE
+QA Skills - TDD and AI Agents Best Practices|TDD matters more with AI agents; mutation testing; test-first forces requirements thinking|https://qaskills.sh/blog/tdd-ai-agents-best-practices|TRUE
+Full Scale - Software Testing Trends|AI made testing a bigger job; human-in-the-loop non-negotiable|https://fullscale.io/blog/software-testing-trends/|TRUE
+The New Stack - From Vibe Coding to Agentic Engineering|Karpathy retiring 'vibe coding' term; vibe coding fine for prototypes, not production|https://thenewstack.io/vibe-coding-agentic-engineering/|TRUE

@@ -1,0 +1,21 @@
+flowchart TD
+    U[Business User] -->|natural language question| A[AI Agent / Analyst Copilot]
+    A -->|decompose into sub-tasks| S[Semantic Layer<br/>metrics, definitions, glossary]
+    S -->|authoritative definitions| A
+    A -->|generate SQL via NL2SQL| W[Data Warehouse / Lakehouse]
+    W -->|query results| A
+    A -->|evaluate + validate| H[Human-in-the-loop<br/>validation & guardrails]
+    H -->|approve / refine| A
+    A -->|reasoned answer with trace| U
+    MCP[(Model Context Protocol<br/>connects agent to data systems)]
+    A -.-> MCP
+    MCP -.-> W
+
+    classDef user fill:#e1f0fa,stroke:#2b6cb0,stroke-width:1px;
+    classDef agent fill:#fde68a,stroke:#b45309,stroke-width:1px;
+    classDef layer fill:#d1fae5,stroke:#047857,stroke-width:1px;
+    classDef guard fill:#fce7f3,stroke:#be185d,stroke-width:1px;
+    class U user;
+    class A agent;
+    class S,W,MCP layer;
+    class H guard;

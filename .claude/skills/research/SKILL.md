@@ -32,13 +32,18 @@ Before starting the research, create a research plan by identifying the key area
 - Include references for important claims. 
 - If information cannot be verified, explicitly mention it.
 
-## Tip: Visual Representations
+## Tip: Visual Representations for Better Understanding
 
 Whenever the research contains information that can be better understood visually (e.g., statistical data, comparisons, workflows, architectures, timelines, processes, or structured data), use the `image-maker` skill.
+
+Consider visuals not only for numerical data, but also for comparisons, trends, relationships, processes, workflows, architectures, timelines, and other complex or non-numeric information.
 
 - Provide the `image-maker` skill with the relevant data and context.
 - Allow the `image-maker` skill to recommend the most suitable visualization format.
 - Embed the generated visual representation whenever it belongs and improves clarity and understanding.
+
+**IMPORTANT:** Take a visual-first approach when preparing the research. Identify information that can be understood more clearly through diagrams, charts, flowcharts, timelines, or other visualizations. Recommend the appropriate visuals using the image-maker skill and obtain the user's confirmation before generating them.
+
 
 ## Reference Validation
 

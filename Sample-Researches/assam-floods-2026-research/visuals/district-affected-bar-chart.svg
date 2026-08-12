@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="420" viewBox="0 0 860 420" font-family="Arial, Helvetica, sans-serif">
+  <title>Flood-affected people by district, peak of the July 2026 wave</title>
+  <rect width="860" height="420" fill="#ffffff"/>
+  <text x="20" y="30" font-size="19" font-weight="bold" fill="#1a1a2e">Flood-affected people by district — peak of the July 2026 wave</text>
+  <text x="20" y="50" font-size="12" fill="#555">Counts on 24 July 2026 (ASDMA as reported by PTI). Bars show approximate figures from official bulletins.</text>
+
+  <!-- bars -->
+  <!-- Sivasagar -->
+  <rect x="230" y="80" width="665" height="38" rx="4" fill="#2563eb"/>
+  <text x="225" y="105" text-anchor="end" font-size="13" font-weight="bold" fill="#1a1a2e">Sivasagar</text>
+  <text x="900" y="105" text-anchor="end" font-size="13" font-weight="bold" fill="#1a1a2e">~3.80 lakh</text>
+
+  <!-- Charaideo -->
+  <rect x="230" y="140" width="332.5" height="38" rx="4" fill="#3b82f6"/>
+  <text x="225" y="165" text-anchor="end" font-size="13" fill="#1a1a2e">Charaideo</text>
+  <text x="570" y="165" font-size="13" fill="#1a1a2e">~1.90 lakh</text>
+
+  <!-- Jorhat -->
+  <rect x="230" y="200" width="210" height="38" rx="4" fill="#60a5fa"/>
+  <text x="225" y="225" text-anchor="end" font-size="13" fill="#1a1a2e">Jorhat</text>
+  <text x="447" y="225" font-size="13" fill="#1a1a2e">~1.20 lakh</text>
+
+  <!-- other 8 districts -->
+  <rect x="230" y="260" width="54.25" height="38" rx="4" fill="#93c5fd"/>
+  <text x="225" y="285" text-anchor="end" font-size="12" fill="#1a1a2e">Other 8 districts</text>
+  <text x="291" y="285" font-size="12" fill="#1a1a2e">~0.31 lakh (combined)</text>
+
+  <!-- axis -->
+  <line x1="230" y1="318" x2="900" y2="318" stroke="#444" stroke-width="2"/>
+  <text x="20" y="338" font-size="11" fill="#555">Scale: full bar = 4 lakh (400,000) people. "Other 8 districts" = Nagaon, Kamrup, Kamrup Metro, Karbi Anglong, Tinsukia, Golaghat, Dibrugarh, Hojai combined.</text>
+  <text x="20" y="356" font-size="11" fill="#555">At peak, 7.21 lakh people were affected across 11 districts. By 5 Aug this had fallen to ~1.22 lakh across 5 districts.</text>
+
+  <!-- worst hit note -->
+  <rect x="20" y="370" width="820" height="34" rx="4" fill="#fef3c7" stroke="#d97706"/>
+  <text x="430" y="391" text-anchor="middle" font-size="12" fill="#92400e">Upper Assam districts (Sivasagar, Charaideo, Jorhat) carried the overwhelming share of the impact.</text>
+
+  <text x="860" y="410" text-anchor="end" font-size="9" fill="#666">Source: The Federal/PTI (24 Jul 2026), ASDMA bulletin</text>
+</svg>

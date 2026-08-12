@@ -34,10 +34,29 @@
       "Bash(.venv/bin/pip list *)",
       "Bash(.venv/bin/python -m pytest -q)",
       "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/inbox-curator/analysis_report_inbox-curator/assets\" \"/media/cynoteckdell/data/Documents/inbox-curator/analysis_report_inbox-curator/testing/assets\")",
-      "Bash(.venv/bin/python -m pytest -q --cov-report=html:analysis_report_inbox-curator/testing/htmlcov)"
+      "Bash(.venv/bin/python -m pytest -q --cov-report=html:analysis_report_inbox-curator/testing/htmlcov)",
+      "WebFetch(domain:newsletter.pragmaticengineer.com)",
+      "WebFetch(domain:arxiv.org)",
+      "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/FastAPI practice/Sample-Researches/TDD_in_the_Age_of_AI_2026/visuals\" *)",
+      "WebFetch(domain:fortune.com)",
+      "WebFetch(domain:www.forbes.com)",
+      "WebFetch(domain:sourcegraph.com)",
+      "WebFetch(domain:the-decoder.com)",
+      "Bash(mkdir -p \"/tmp/claude-1000/-media-cynoteckdell-data-Documents-FastAPI-practice/26326ca5-b552-43a7-b9b7-85a3feaf4fa5/scratchpad/images\")",
+      "Bash(python3 -c \"import graphviz\")",
+      "Bash(python3 chart_workflow.py)",
+      "Bash(python3 chart_juniors.py)",
+      "WebFetch(domain:www.esa.int)",
+      "WebFetch(domain:starchild.gsfc.nasa.gov)",
+      "WebFetch(domain:math.ucr.edu)",
+      "WebFetch(domain:skyandtelescope.org)",
+      "WebFetch(domain:www.scientificamerican.com)",
+      "WebFetch(domain:www.quantamagazine.org)",
+      "WebFetch(domain:plato.stanford.edu)"
     ],
     "additionalDirectories": [
-      "/media/cynoteckdell/data/Documents/FastAPI practice"
+      "/media/cynoteckdell/data/Documents/FastAPI practice",
+      "/media/cynoteckdell/data/Documents/FastAPI practice/Sample-Researches/TDD_in_the_Age_of_AI_2026"
     ]
   }
 }

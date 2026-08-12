@@ -1,0 +1,26 @@
+flowchart TD
+    ANALYST[Data Analyst 2027<br/>human-in-the-loop] --> CORE[Core Technical]
+    ANALYST --> AIERA[AI-Era Skills]
+    ANALYST --> HUMAN[Human & Business]
+
+    CORE --> C1[SQL]
+    CORE --> C2[Python / Pandas / Polars]
+    CORE --> C3[Statistics]
+    CORE --> C4[Visualization<br/>Power BI / Tableau]
+
+    AIERA --> A1[AI literacy]
+    AIERA --> A2[Prompt engineering]
+    AIERA --> A3[Validating AI outputs]
+    AIERA --> A4[Natural-language querying<br/>working with copilots]
+
+    HUMAN --> H1[Critical thinking]
+    HUMAN --> H2[Communication & storytelling]
+    HUMAN --> H3[Domain expertise]
+    HUMAN --> H4[Problem-solving]
+
+    classDef analyst fill:#fde68a,stroke:#b45309,stroke-width:2px;
+    classDef cat fill:#e0e7ff,stroke:#4338ca,stroke-width:1px;
+    classDef skill fill:#d1fae5,stroke:#047857,stroke-width:1px;
+    class ANALYST analyst;
+    class CORE,AIERA,HUMAN cat;
+    class C1,C2,C3,C4,A1,A2,A3,A4,H1,H2,H3,H4 skill;

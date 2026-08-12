@@ -1,0 +1,23 @@
+flowchart LR
+    subgraph Evolution[Platform evolution]
+        direction LR
+        WH[Data Warehouse<br/>structured, governed, BI] --> LAKE[Data Lake<br/>cheap, flexible, ML]
+        LAKE --> LH[Data Lakehouse<br/>ACID + analytics + ML]
+    end
+
+    subgraph Patterns[Operating patterns layered on top]
+        direction LR
+        FAB[Data Fabric<br/>connect & govern existing systems] 
+        MESH[Data Mesh<br/>domain ownership, data as product]
+    end
+
+    LH -->|converge by 2027| FAB
+    LH --> MESH
+    FAB --> HYBRID[Hybrid Mesh + Fabric<br/>localized control, global oversight]
+
+    classDef platform fill:#dbeafe,stroke:#1d4ed8,stroke-width:1px;
+    classDef pattern fill:#fef3c7,stroke:#b45309,stroke-width:1px;
+    classDef hybrid fill:#d1fae5,stroke:#047857,stroke-width:1px;
+    class WH,LAKE,LH platform;
+    class FAB,MESH pattern;
+    class HYBRID hybrid;

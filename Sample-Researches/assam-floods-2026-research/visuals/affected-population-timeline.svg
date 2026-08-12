@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500" font-family="Arial, Helvetica, sans-serif">
+  <title>Flood-affected population in Assam, July-August 2026</title>
+  <rect width="920" height="500" fill="#ffffff"/>
+  <text x="460" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Total flood-affected population in Assam (14 Jul – 5 Aug 2026)</text>
+  <text x="460" y="50" text-anchor="middle" font-size="12" fill="#555">Source: ASDMA bulletins as reported by PTI, ETV Bharat, NE Now, The Hindu, New Indian Express</text>
+
+  <!-- plot area: x 70..870, y 60..420 -->
+  <!-- horizontal gridlines every 1 lakh -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="70" y1="420" x2="870" y2="420"/>
+    <line x1="70" y1="372.5" x2="870" y2="372.5"/>
+    <line x1="70" y1="325" x2="870" y2="325"/>
+    <line x1="70" y1="277.5" x2="870" y2="277.5"/>
+    <line x1="70" y1="230" x2="870" y2="230"/>
+    <line x1="70" y1="182.5" x2="870" y2="182.5"/>
+    <line x1="70" y1="135" x2="870" y2="135"/>
+    <line x1="70" y1="87.5" x2="870" y2="87.5"/>
+    <line x1="70" y1="60" x2="870" y2="60"/>
+  </g>
+  <g fill="#888" font-size="11" text-anchor="end">
+    <text x="64" y="424">0</text>
+    <text x="64" y="376.5">1</text>
+    <text x="64" y="329">2</text>
+    <text x="64" y="281.5">3</text>
+    <text x="64" y="234">4</text>
+    <text x="64" y="186.5">5</text>
+    <text x="64" y="139">6</text>
+    <text x="64" y="91.5">7</text>
+    <text x="64" y="64">8</text>
+  </g>
+  <text x="24" y="245" fill="#888" font-size="12" transform="rotate(-90 24 245)" text-anchor="middle">Affected people (lakh)</text>
+
+  <!-- axis -->
+  <line x1="70" y1="420" x2="870" y2="420" stroke="#444" stroke-width="2"/>
+  <line x1="70" y1="60" x2="70" y2="420" stroke="#444" stroke-width="2"/>
+
+  <!-- data: date -> x, value(lakh) -> y -->
+  <!-- points: Jul14(60,402.4) Jul20(141,247.6) Jul22(222,74.2) Jul24(303,77.5) Jul26(384,108.9) Jul28(465,208.6) Jul29(546,262.3) Jul30(627,325) Aug1(708,328.3) Aug2(789,335) Aug5(870,362) -->
+  <polyline fill="none" stroke="#2563eb" stroke-width="3" points="60,402.4 141,247.6 222,74.2 303,77.5 384,108.9 465,208.6 546,262.3 627,325 708,328.3 789,335 870,362"/>
+
+  <!-- data points -->
+  <g>
+    <circle cx="60" cy="402.4" r="4" fill="#2563eb"/>
+    <circle cx="141" cy="247.6" r="4" fill="#2563eb"/>
+    <circle cx="222" cy="74.2" r="4" fill="#dc2626"/>
+    <circle cx="303" cy="77.5" r="4" fill="#2563eb"/>
+    <circle cx="384" cy="108.9" r="4" fill="#2563eb"/>
+    <circle cx="465" cy="208.6" r="4" fill="#2563eb"/>
+    <circle cx="546" cy="262.3" r="4" fill="#2563eb"/>
+    <circle cx="627" cy="325" r="4" fill="#2563eb"/>
+    <circle cx="708" cy="328.3" r="4" fill="#2563eb"/>
+    <circle cx="789" cy="335" r="4" fill="#2563eb"/>
+    <circle cx="870" cy="362" r="4" fill="#2563eb"/>
+  </g>
+
+  <!-- value labels -->
+  <g font-size="10" fill="#1a1a2e">
+    <text x="60" y="418" text-anchor="middle">0.37</text>
+    <text x="141" y="240" text-anchor="middle">3.63</text>
+    <text x="222" y="62" text-anchor="middle" fill="#dc2626" font-weight="bold">7.28</text>
+    <text x="303" y="64" text-anchor="middle">7.21</text>
+    <text x="384" y="101" text-anchor="middle">6.55</text>
+    <text x="465" y="201" text-anchor="middle">4.45</text>
+    <text x="546" y="255" text-anchor="middle">3.32</text>
+    <text x="627" y="318" text-anchor="middle">2.0+</text>
+    <text x="708" y="344" text-anchor="middle">1.93</text>
+    <text x="789" y="351" text-anchor="middle">1.79</text>
+    <text x="870" y="378" text-anchor="middle">1.22+</text>
+  </g>
+
+  <!-- x labels -->
+  <g fill="#333" font-size="11" text-anchor="middle">
+    <text x="60" y="440">14 Jul</text>
+    <text x="141" y="440">20 Jul</text>
+    <text x="222" y="440">22 Jul*</text>
+    <text x="303" y="440">24 Jul</text>
+    <text x="384" y="440">26 Jul</text>
+    <text x="465" y="440">28 Jul</text>
+    <text x="546" y="440">29 Jul</text>
+    <text x="627" y="440">30 Jul</text>
+    <text x="708" y="440">1 Aug</text>
+    <text x="789" y="440">2 Aug</text>
+    <text x="870" y="440">5 Aug</text>
+  </g>
+
+  <!-- annotations -->
+  <rect x="180" y="455" width="95" height="34" rx="4" fill="#fef3c7" stroke="#d97706"/>
+  <text x="227" y="468" text-anchor="middle" font-size="9" fill="#92400e">Peak: 21–24 Jul</text>
+  <text x="227" y="482" text-anchor="middle" font-size="9" fill="#92400e">~7.2–7.3 lakh</text>
+  <line x1="222" y1="74" x2="227" y2="455" stroke="#d97706" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <text x="60" y="496" font-size="9" fill="#666">* 22 Jul figure (7.28 lakh) is the seasonal cumulative count since 29 April, as stated by the Chief Minister. All other points are daily point-in-time counts.</text>
+  <text x="60" y="508" font-size="9" fill="#666">Values in lakh (1 lakh = 100,000). Sources: ASDMA daily bulletins as reported in the media.</text>
+</svg>

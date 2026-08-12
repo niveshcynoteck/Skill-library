@@ -1,0 +1,16 @@
+Name,Information,URL,Valid
+DevAssure,Argues TDD prevents AI agents from writing tests that validate their own broken implementations,https://www.devassure.io/blog/tdd-second-act-ai-coding-agents/,TRUE
+DeviQA State of AI-Generated Code 2026,Survey of 300 QA professionals on bug rates and trust in AI-generated code,https://www.deviqa.com/blog/state-of-ai-generated-code-2026-the-qa-and-testing-gap/,TRUE
+Thoughtworks Technology Radar Vol. 34 (April 2026),Announces focus on AI cognitive debt and mutation testing as an Adopt-level practice,https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34,TRUE
+Augment Code - What Is Spec-Driven Development,Explains spec-driven development as a response to AI vibe coding drift,https://www.augmentcode.com/guides/what-is-spec-driven-development,TRUE
+Augment Code - Spec + TDD Guide,Describes the 5-phase Spec+TDD workflow for AI-generated code,https://www.augmentcode.com/guides/spec-tdd-shippable-ai-generated-code,TRUE
+Augment Code - Mutation Testing Guide,Explains why mutation testing verifies AI-generated test suite quality,https://www.augmentcode.com/guides/mutation-testing-ai-generated-code,TRUE
+The Pragmatic Engineer - Kent Beck interview,Kent Beck's views on TDD as a superpower for working with unpredictable AI agents,https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent,TRUE
+arXiv - TDAD paper,Academic paper on Test-Driven Agentic Development using dependency graph impact analysis,https://arxiv.org/pdf/2603.17973,TRUE
+Forbes Technology Council,Argues TDD is the most ignored practice in AI coding; cites Boris Cherny quote on 2-3x quality improvement,https://www.forbes.com/councils/forbestechcouncil/2026/04/15/the-most-ignored-practice-in-ai-coding-test-driven-development/,TRUE
+Sonar - State of Code Developer Survey blog,Reports AI is 42% of committed code in 2026 and 96% of developers do not fully trust it,https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/,TRUE
+Sonar - Press Release on Verification Gap,States only 48% of developers always verify AI code before committing,https://www.sonarsource.com/company/press-releases/sonar-data-reveals-critical-verification-gap-in-ai-coding/,TRUE
+Stack Overflow Blog - Closing the AI Trust Gap,Reports developer trust in AI accuracy fell from 40% to 29% year-over-year despite rising adoption,https://stackoverflow.blog/2026/02/18/closing-the-developer-ai-trust-gap/,TRUE
+CodeRabbit - State of AI vs Human Code Generation Report,Analysis of 470 open-source PRs finding AI code has 1.7x more defects than human code,https://www.coderabbit.ai/blog/state-of-ai-vs-human-code-generation-report,TRUE
+GitHub Blog - TDD with GitHub Copilot,Official GitHub guide on practicing TDD with Copilot assistance,https://github.blog/ai-and-ml/github-copilot/github-for-beginners-test-driven-development-tdd-with-github-copilot/,TRUE
+DEV Community - TDD with Claude,Practical walkthrough of Claude writing tests first then implementation,https://dev.to/spyrae/tdd-with-ai-claude-writes-tests-first-then-the-implementation-27hm,TRUE
