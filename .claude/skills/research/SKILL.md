@@ -2,7 +2,9 @@
 name: research
 
 description: |
-    Use this skill whenever the user wants to research a topic in a structured and comprehensive way. This skill is intended to provide well-organized, fact-based, and easy-to-read research reports on various topics.
+    TRIGGER — invoke whenever the user wants a structured, fact-based writeup on a topic rather than a quick answer: "research X", "look into X", "do a deep dive on X", "compare X vs Y", "what are the pros/cons/tradeoffs of X", "give me a report/overview/landscape of X", "investigate X and summarize findings", or any request implying multiple sources should be checked and organized before answering.
+    SKIP when: the user asks a quick factual question answerable in 1-2 sentences ("what version of X", "does X support Y"); the topic is about THIS codebase/repo (use code-analyzer or Explore instead); or the user explicitly wants raw brainstorming/opinion, not sourced research.
+
 ---
 
 ## Research Planning
