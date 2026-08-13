@@ -2,7 +2,8 @@
 name: image-maker
 
 description: |
-    Use this skill whenever the user wants to create a visual representation of information such as statistical data, tables, workflows, architectures, processes, comparisons, or other structured content.
+    TRIGGER — invoke whenever the user wants ANY image, picture, diagram, or visual asset produced or turned into a picture: "generate an image", "create/make/draw/produce an image or picture", "visualize this", "turn this into a diagram/picture", "show me a workflow/architecture/flowchart/sequence/process/comparison/timeline/org chart/mind map", or a request to represent statistical data, tables, workflows, architectures, processes, comparisons, or other structured content visually. Default to this skill for any image-generation request unless the user explicitly asks for a coded chart/graph inside a dashboard or app UI.
+    SKIP when: the request is for a data chart/graph/plot meant to live in a dashboard, report, or app UI (bar/line/pie chart, stat tile, sparkline, heatmap)
 ---
 
 # Image Maker

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1424"/>
+      <stop offset="1" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="leftPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b4c7e"/>
+      <stop offset="1" stop-color="#1f3a63"/>
+    </linearGradient>
+    <linearGradient id="rightPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f9e89"/>
+      <stop offset="1" stop-color="#157567"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="800" y="78" text-anchor="middle" font-size="38" font-weight="700" fill="#ffffff">In-House AI Team vs. Outsourcing AI Development Partner</text>
+  <text x="800" y="114" text-anchor="middle" font-size="17" fill="#9aa3b8">Two paths to building AI capability &#8212; weighed on cost, speed, control, and talent</text>
+
+  <!-- Left panel: In-House -->
+  <rect x="60" y="160" width="660" height="660" rx="18" fill="url(#leftPanel)"/>
+  <text x="390" y="215" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">IN-HOUSE AI TEAM</text>
+
+  <!-- Office building icon -->
+  <g transform="translate(230,250)">
+    <rect x="0" y="40" width="140" height="140" rx="6" fill="#dce6f5"/>
+    <rect x="20" y="60" width="24" height="24" fill="#2b4c7e"/>
+    <rect x="58" y="60" width="24" height="24" fill="#2b4c7e"/>
+    <rect x="96" y="60" width="24" height="24" fill="#2b4c7e"/>
+    <rect x="20" y="98" width="24" height="24" fill="#2b4c7e"/>
+    <rect x="58" y="98" width="24" height="24" fill="#2b4c7e"/>
+    <rect x="96" y="98" width="24" height="24" fill="#2b4c7e"/>
+    <rect x="55" y="140" width="30" height="40" fill="#2b4c7e"/>
+  </g>
+
+  <!-- Team of 4 person icons under the building -->
+  <g fill="#dce6f5">
+    <g transform="translate(160,430)">
+      <circle cx="20" cy="18" r="16"/>
+      <path d="M0 78 C0 48 40 48 40 78 Z"/>
+    </g>
+    <g transform="translate(255,430)">
+      <circle cx="20" cy="18" r="16"/>
+      <path d="M0 78 C0 48 40 48 40 78 Z"/>
+    </g>
+    <g transform="translate(350,430)">
+      <circle cx="20" cy="18" r="16"/>
+      <path d="M0 78 C0 48 40 48 40 78 Z"/>
+    </g>
+    <g transform="translate(445,430)">
+      <circle cx="20" cy="18" r="16"/>
+      <path d="M0 78 C0 48 40 48 40 78 Z"/>
+    </g>
+  </g>
+  <text x="390" y="545" text-anchor="middle" font-size="14" fill="#eafff9">Dedicated, embedded team &#8212; ML engineers, data scientists, MLOps</text>
+
+  <!-- Trait chips -->
+  <g font-size="14" font-weight="600" fill="#1a1a2e">
+    <rect x="110" y="580" width="180" height="42" rx="21" fill="#eafff9"/>
+    <text x="200" y="606" text-anchor="middle">Full control</text>
+
+    <rect x="310" y="580" width="230" height="42" rx="21" fill="#eafff9"/>
+    <text x="425" y="606" text-anchor="middle">Institutional knowledge</text>
+
+    <rect x="560" y="580" width="120" height="42" rx="21" fill="#eafff9"/>
+    <text x="620" y="606" text-anchor="middle">Slower start</text>
+
+    <rect x="110" y="636" width="230" height="42" rx="21" fill="#eafff9"/>
+    <text x="225" y="662" text-anchor="middle">Higher upfront cost</text>
+
+    <rect x="360" y="636" width="200" height="42" rx="21" fill="#eafff9"/>
+    <text x="460" y="662" text-anchor="middle">Fixed, slow to flex</text>
+  </g>
+
+  <text x="390" y="750" text-anchor="middle" font-size="15" fill="#dce6f5">Best for: core IP, long-term strategic bets</text>
+
+  <!-- Right panel: Outsourcing -->
+  <rect x="880" y="160" width="660" height="660" rx="18" fill="url(#rightPanel)"/>
+  <text x="1210" y="215" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">OUTSOURCING AI PARTNER</text>
+
+  <!-- Distributed network icon: central hub + remote nodes -->
+  <g transform="translate(1210,320)" stroke="#eafff9" stroke-width="2.5" fill="none">
+    <line x1="0" y1="0" x2="-110" y2="-40"/>
+    <line x1="0" y1="0" x2="110" y2="-40"/>
+    <line x1="0" y1="0" x2="-110" y2="60"/>
+    <line x1="0" y1="0" x2="110" y2="60"/>
+    <line x1="0" y1="0" x2="0" y2="90"/>
+  </g>
+  <g fill="#eafff9">
+    <circle cx="1210" cy="320" r="20"/>
+    <circle cx="1100" cy="280" r="13"/>
+    <circle cx="1320" cy="280" r="13"/>
+    <circle cx="1100" cy="380" r="13"/>
+    <circle cx="1320" cy="380" r="13"/>
+    <circle cx="1210" cy="410" r="13"/>
+  </g>
+  <text x="1210" y="465" text-anchor="middle" font-size="14" fill="#eafff9">External specialists, agency, or managed service &#8212; engaged on demand</text>
+
+  <!-- Trait chips -->
+  <g font-size="14" font-weight="600" fill="#1a1a2e">
+    <rect x="930" y="580" width="160" height="42" rx="21" fill="#eafff9"/>
+    <text x="1010" y="606" text-anchor="middle">Faster launch</text>
+
+    <rect x="1110" y="580" width="200" height="42" rx="21" fill="#eafff9"/>
+    <text x="1210" y="606" text-anchor="middle">Elastic team size</text>
+
+    <rect x="1330" y="580" width="150" height="42" rx="21" fill="#eafff9"/>
+    <text x="1405" y="606" text-anchor="middle">Lower entry cost</text>
+
+    <rect x="930" y="636" width="230" height="42" rx="21" fill="#eafff9"/>
+    <text x="1045" y="662" text-anchor="middle">Vendor / IP dependency</text>
+
+    <rect x="1180" y="636" width="300" height="42" rx="21" fill="#eafff9"/>
+    <text x="1330" y="662" text-anchor="middle">Less institutional retention</text>
+  </g>
+
+  <text x="1210" y="750" text-anchor="middle" font-size="15" fill="#eafff9">Best for: speed, non-core needs, limited long-term investment</text>
+
+  <!-- Center divider: balance scale motif -->
+  <g transform="translate(800,490)">
+    <circle cx="0" cy="0" r="58" fill="#d9a531"/>
+    <text x="0" y="10" text-anchor="middle" font-size="30" font-weight="700" fill="#1a1a2e">VS</text>
+  </g>
+
+  <!-- Footer hint -->
+  <text x="800" y="855" text-anchor="middle" font-size="15" fill="#8a8f98">Most enterprises in 2026 land on a hybrid model &#8212; strategic ownership in-house, execution accelerated by a partner</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="620" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="480" y="34" text-anchor="middle" font-size="21" font-weight="700" fill="#1a1a2e">In-House vs. Outsourced AI Development: Cost &amp; Timeline</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12.5" fill="#666677">Estimated ranges for a first AI initiative (2026 industry salary &amp; vendor-pricing benchmarks) — directional, not exact quotes</text>
+
+  <!-- Legend -->
+  <rect x="640" y="72" width="14" height="14" fill="#2b4c7e" rx="2"/>
+  <text x="660" y="83" font-size="13" fill="#333">In-House Team</text>
+  <rect x="800" y="72" width="14" height="14" fill="#1f9e89" rx="2"/>
+  <text x="820" y="83" font-size="13" fill="#333">Outsourced Partner</text>
+
+  <!-- ================= CHART 1: COST ================= -->
+  <text x="220" y="108" font-size="14" font-weight="600" fill="#1a1a2e">First-Year Cost (USD, thousands)</text>
+
+  <!-- gridlines: 0,200,...,1200 over x=220..900 -->
+  <g stroke="#e2e5ea" stroke-width="1">
+    <line x1="220" y1="118" x2="220" y2="250"/>
+    <line x1="325.4" y1="118" x2="325.4" y2="250"/>
+    <line x1="430.8" y1="118" x2="430.8" y2="250"/>
+    <line x1="536.2" y1="118" x2="536.2" y2="250"/>
+    <line x1="641.5" y1="118" x2="641.5" y2="250"/>
+    <line x1="746.9" y1="118" x2="746.9" y2="250"/>
+    <line x1="852.3" y1="118" x2="852.3" y2="250"/>
+  </g>
+  <g font-size="11.5" fill="#888" text-anchor="middle">
+    <text x="220" y="264">$0</text>
+    <text x="325.4" y="264">$200K</text>
+    <text x="430.8" y="264">$400K</text>
+    <text x="536.2" y="264">$600K</text>
+    <text x="641.5" y="264">$800K</text>
+    <text x="746.9" y="264">$1.0M</text>
+    <text x="852.3" y="264">$1.2M</text>
+  </g>
+
+  <!-- row labels -->
+  <text x="200" y="145" text-anchor="end" font-size="13" fill="#333">In-House</text>
+  <text x="200" y="215" text-anchor="end" font-size="13" fill="#333">Outsourced</text>
+
+  <!-- In-house bar: 700K to 1200K+ -->
+  <rect x="586.1" y="125" width="266.2" height="34" rx="6" fill="#2b4c7e"/>
+  <text x="579" y="146" text-anchor="end" font-size="12" font-weight="600" fill="#2b4c7e">$700K</text>
+  <text x="859" y="146" text-anchor="start" font-size="12" font-weight="600" fill="#2b4c7e">$1.2M+</text>
+
+  <!-- Outsourced bar: 100K to 400K -->
+  <rect x="272.3" y="195" width="156.9" height="34" rx="6" fill="#1f9e89"/>
+  <text x="265" y="216" text-anchor="end" font-size="12" font-weight="600" fill="#1f9e89">$100K</text>
+  <text x="436" y="216" text-anchor="start" font-size="12" font-weight="600" fill="#1f9e89">$400K</text>
+
+  <!-- ================= CHART 2: TIME ================= -->
+  <text x="220" y="335" font-size="14" font-weight="600" fill="#1a1a2e">Time to Launch / First Measurable Value (months)</text>
+
+  <!-- gridlines: 0,2,4,...,12 over x=220..900 -->
+  <g stroke="#e2e5ea" stroke-width="1">
+    <line x1="220" y1="345" x2="220" y2="477"/>
+    <line x1="324.6" y1="345" x2="324.6" y2="477"/>
+    <line x1="429.2" y1="345" x2="429.2" y2="477"/>
+    <line x1="533.8" y1="345" x2="533.8" y2="477"/>
+    <line x1="638.5" y1="345" x2="638.5" y2="477"/>
+    <line x1="743.1" y1="345" x2="743.1" y2="477"/>
+    <line x1="847.7" y1="345" x2="847.7" y2="477"/>
+  </g>
+  <g font-size="11.5" fill="#888" text-anchor="middle">
+    <text x="220" y="491">0</text>
+    <text x="324.6" y="491">2 mo</text>
+    <text x="429.2" y="491">4 mo</text>
+    <text x="533.8" y="491">6 mo</text>
+    <text x="638.5" y="491">8 mo</text>
+    <text x="743.1" y="491">10 mo</text>
+    <text x="847.7" y="491">12 mo</text>
+  </g>
+
+  <!-- row labels -->
+  <text x="200" y="372" text-anchor="end" font-size="13" fill="#333">In-House</text>
+  <text x="200" y="442" text-anchor="end" font-size="13" fill="#333">Outsourced</text>
+
+  <!-- In-house bar: 6 to 12 months -->
+  <rect x="533.8" y="352" width="313.9" height="34" rx="6" fill="#2b4c7e"/>
+  <text x="527" y="373" text-anchor="end" font-size="12" font-weight="600" fill="#2b4c7e">6 mo</text>
+  <text x="854" y="373" text-anchor="start" font-size="12" font-weight="600" fill="#2b4c7e">12 mo</text>
+
+  <!-- Outsourced bar: 0.5 to 4 months -->
+  <rect x="246.2" y="422" width="183" height="34" rx="6" fill="#1f9e89"/>
+  <text x="239" y="443" text-anchor="end" font-size="12" font-weight="600" fill="#1f9e89">2 wk</text>
+  <text x="436" y="443" text-anchor="start" font-size="12" font-weight="600" fill="#1f9e89">4 mo</text>
+
+  <!-- Footnote -->
+  <line x1="60" y1="530" x2="900" y2="530" stroke="#e2e5ea" stroke-width="1"/>
+  <text x="60" y="552" font-size="11.5" fill="#777">Cost = fully-loaded first-year spend (salary, benefits, tooling, compute, recruiting, ramp-up) for in-house vs. typical pricing</text>
+  <text x="60" y="568" font-size="11.5" fill="#777">for a first outsourced AI project. Actual figures vary widely by role, region, project scope, and vendor. See report references.</text>
+</svg>

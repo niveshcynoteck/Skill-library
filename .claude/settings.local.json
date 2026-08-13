@@ -52,11 +52,19 @@
       "WebFetch(domain:skyandtelescope.org)",
       "WebFetch(domain:www.scientificamerican.com)",
       "WebFetch(domain:www.quantamagazine.org)",
-      "WebFetch(domain:plato.stanford.edu)"
+      "WebFetch(domain:plato.stanford.edu)",
+      "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/FastAPI practice/Sample-Researches/AI Development vs AI Consulting/assets\")",
+      "Bash(python3 make_charts_ai.py)",
+      "Bash(python3 -c \"import matplotlib; print\\(matplotlib.__version__\\)\")",
+      "Bash(grep -c '\\\\$' \"/tmp/claude-1000/-media-cynoteckdell-data-Documents-FastAPI-practice/5b6a37fd-2d04-4a41-8087-d0ab0bd84475/scratchpad/make_charts_ai.py\")",
+      "Bash(mkdir -p \"/media/cynoteckdell/data/Documents/FastAPI practice/Sample-Researches/AI-Consulting-vs-AI-Development/assets\")",
+      "WebFetch(domain:www.leanware.co)",
+      "WebFetch(domain:seaborn.pydata.org)"
     ],
     "additionalDirectories": [
       "/media/cynoteckdell/data/Documents/FastAPI practice",
-      "/media/cynoteckdell/data/Documents/FastAPI practice/Sample-Researches/TDD_in_the_Age_of_AI_2026"
+      "/media/cynoteckdell/data/Documents/FastAPI practice/Sample-Researches/TDD_in_the_Age_of_AI_2026",
+      "/media/cynoteckdell/data/Documents/FastAPI practice/Sample-Researches/AI-Consulting-vs-AI-Development"
     ]
   }
 }

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 850" width="1520" height="850" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1520" height="850" fill="#ffffff"/>
+  <text x="760" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a2e">Build In-House, Outsource, or Hybrid? A Decision Framework</text>
+
+  <!-- ===== connector lines (drawn first, under boxes) ===== -->
+  <g stroke="#8a8f98" stroke-width="1.6" fill="none">
+    <path d="M725,115 L725,165" marker-end="url(#arrow)"/>
+    <path d="M725,235 L725,265 L320,265 L320,305" marker-end="url(#arrow)"/>
+    <path d="M725,235 L725,265 L1130,265 L1130,305" marker-end="url(#arrow)"/>
+    <path d="M320,375 L320,405 L190,405 L190,445" marker-end="url(#arrow)"/>
+    <path d="M320,375 L320,405 L450,405 L450,445" marker-end="url(#arrow)"/>
+    <path d="M1130,375 L1130,405 L970,405 L970,445" marker-end="url(#arrow)"/>
+    <path d="M1130,375 L1130,405 L1290,405 L1290,445" marker-end="url(#arrow)"/>
+    <path d="M450,515 L450,545 L340,545 L340,585" marker-end="url(#arrow)"/>
+    <path d="M450,515 L450,545 L560,545 L560,585" marker-end="url(#arrow)"/>
+    <path d="M1290,515 L1290,545 L1180,545 L1180,585" marker-end="url(#arrow)"/>
+    <path d="M1290,515 L1290,545 L1400,545 L1400,585" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- edge labels -->
+  <g font-size="12.5" font-weight="700" fill="#555">
+    <rect x="480" y="246" width="34" height="18" fill="#fff"/><text x="497" y="260" text-anchor="middle">No</text>
+    <rect x="912" y="246" width="34" height="18" fill="#fff"/><text x="929" y="260" text-anchor="middle">Yes</text>
+    <rect x="205" y="386" width="34" height="18" fill="#fff"/><text x="222" y="400" text-anchor="middle">Yes</text>
+    <rect x="415" y="386" width="34" height="18" fill="#fff"/><text x="432" y="400" text-anchor="middle">No</text>
+    <rect x="985" y="386" width="34" height="18" fill="#fff"/><text x="1002" y="400" text-anchor="middle">Yes</text>
+    <rect x="1255" y="386" width="34" height="18" fill="#fff"/><text x="1272" y="400" text-anchor="middle">No</text>
+    <rect x="325" y="526" width="34" height="18" fill="#fff"/><text x="342" y="540" text-anchor="middle">No</text>
+    <rect x="525" y="526" width="34" height="18" fill="#fff"/><text x="542" y="540" text-anchor="middle">Yes</text>
+    <rect x="1145" y="526" width="34" height="18" fill="#fff"/><text x="1162" y="540" text-anchor="middle">Yes</text>
+    <rect x="1365" y="526" width="34" height="18" fill="#fff"/><text x="1382" y="540" text-anchor="middle">No</text>
+  </g>
+
+  <!-- ===== Start ===== -->
+  <rect x="585" y="65" width="280" height="50" rx="10" fill="#f2f3f6" stroke="#8a8f98" stroke-width="1.4"/>
+  <text x="725" y="95" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a2e">Evaluate the AI capability</text>
+
+  <!-- ===== Q1 ===== -->
+  <rect x="485" y="165" width="480" height="70" rx="10" fill="#fff8e6" stroke="#d9a531" stroke-width="1.6"/>
+  <text x="725" y="195" text-anchor="middle" font-size="13.5" font-weight="700" fill="#7a5b12">Is this AI capability core to your competitive</text>
+  <text x="725" y="213" text-anchor="middle" font-size="13.5" font-weight="700" fill="#7a5b12">differentiation (core IP)?</text>
+
+  <!-- ===== Q2 ===== -->
+  <rect x="160" y="305" width="320" height="70" rx="10" fill="#fff8e6" stroke="#d9a531" stroke-width="1.6"/>
+  <text x="320" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">Need speed + limited long-term</text>
+  <text x="320" y="353" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">engineering investment?</text>
+
+  <!-- ===== Q4 ===== -->
+  <rect x="960" y="305" width="340" height="70" rx="10" fill="#fff8e6" stroke="#d9a531" stroke-width="1.6"/>
+  <text x="1130" y="329" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">Have (or can quickly get) in-house AI talent</text>
+  <text x="1130" y="347" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">+ a proprietary data edge?</text>
+
+  <!-- ===== OUTSOURCE-A (leaf) ===== -->
+  <rect x="90" y="445" width="200" height="70" rx="10" fill="#1f9e89"/>
+  <text x="190" y="468" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">OUTSOURCE</text>
+  <text x="190" y="486" text-anchor="middle" font-size="11" fill="#eafff9">Fast validation, minimal</text>
+  <text x="190" y="500" text-anchor="middle" font-size="11" fill="#eafff9">upfront investment</text>
+
+  <!-- ===== Q3 ===== -->
+  <rect x="310" y="445" width="280" height="70" rx="10" fill="#fff8e6" stroke="#d9a531" stroke-width="1.6"/>
+  <text x="450" y="475" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">Is it a recurring, evolving need</text>
+  <text x="450" y="493" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">(not one-off)?</text>
+
+  <!-- ===== BUILD (leaf) ===== -->
+  <rect x="870" y="445" width="200" height="70" rx="10" fill="#2b4c7e"/>
+  <text x="970" y="468" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">BUILD IN-HOUSE</text>
+  <text x="970" y="486" text-anchor="middle" font-size="11" fill="#dce6f5">You have the talent &amp;</text>
+  <text x="970" y="500" text-anchor="middle" font-size="11" fill="#dce6f5">the data edge</text>
+
+  <!-- ===== Q5 ===== -->
+  <rect x="1150" y="445" width="280" height="70" rx="10" fill="#fff8e6" stroke="#d9a531" stroke-width="1.6"/>
+  <text x="1290" y="475" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">Is this a long-term strategic bet</text>
+  <text x="1290" y="493" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5b12">(not just a pilot)?</text>
+
+  <!-- ===== OUTSOURCE-B (leaf) ===== -->
+  <rect x="240" y="585" width="200" height="70" rx="10" fill="#1f9e89"/>
+  <text x="340" y="608" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">OUTSOURCE</text>
+  <text x="340" y="626" text-anchor="middle" font-size="11" fill="#eafff9">(project-based) — one-off</text>
+  <text x="340" y="640" text-anchor="middle" font-size="11" fill="#eafff9">need, no case for a team</text>
+
+  <!-- ===== HYBRID-A (leaf) ===== -->
+  <rect x="460" y="585" width="200" height="70" rx="10" fill="#7c4dab"/>
+  <text x="560" y="608" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">HYBRID</text>
+  <text x="560" y="626" text-anchor="middle" font-size="11" fill="#f1e8f8">Outsource execution, keep</text>
+  <text x="560" y="640" text-anchor="middle" font-size="11" fill="#f1e8f8">light in-house oversight</text>
+
+  <!-- ===== HYBRID-B (leaf) ===== -->
+  <rect x="1080" y="585" width="200" height="70" rx="10" fill="#7c4dab"/>
+  <text x="1180" y="604" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">HYBRID</text>
+  <text x="1180" y="621" text-anchor="middle" font-size="10.5" fill="#f1e8f8">In-house owns architecture /</text>
+  <text x="1180" y="635" text-anchor="middle" font-size="10.5" fill="#f1e8f8">governance; partner executes</text>
+
+  <!-- ===== OUTSOURCE-C (leaf) ===== -->
+  <rect x="1300" y="585" width="200" height="70" rx="10" fill="#1f9e89"/>
+  <text x="1400" y="608" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">OUTSOURCE</text>
+  <text x="1400" y="626" text-anchor="middle" font-size="11" fill="#eafff9">Validate first, insource</text>
+  <text x="1400" y="640" text-anchor="middle" font-size="11" fill="#eafff9">later if it proves out</text>
+
+  <!-- ===== Summary legend cards ===== -->
+  <g>
+    <rect x="40" y="710" width="460" height="100" rx="10" fill="#2b4c7e"/>
+    <text x="270" y="735" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">BUILD IN-HOUSE</text>
+    <text x="270" y="758" text-anchor="middle" font-size="11.5" fill="#dce6f5">Full control &amp; deep institutional knowledge —</text>
+    <text x="270" y="774" text-anchor="middle" font-size="11.5" fill="#dce6f5">highest fixed cost, slowest start</text>
+
+    <rect x="530" y="710" width="460" height="100" rx="10" fill="#1f9e89"/>
+    <text x="760" y="735" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">OUTSOURCE</text>
+    <text x="760" y="758" text-anchor="middle" font-size="11.5" fill="#eafff9">Fast &amp; elastic cost — less control, IP/security/</text>
+    <text x="760" y="774" text-anchor="middle" font-size="11.5" fill="#eafff9">vendor lock-in risk</text>
+
+    <rect x="1020" y="710" width="460" height="100" rx="10" fill="#7c4dab"/>
+    <text x="1250" y="735" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">HYBRID</text>
+    <text x="1250" y="758" text-anchor="middle" font-size="11.5" fill="#f1e8f8">In-house owns strategy/governance; partner</text>
+    <text x="1250" y="774" text-anchor="middle" font-size="11.5" fill="#f1e8f8">accelerates execution — most land here in 2026</text>
+  </g>
+</svg>

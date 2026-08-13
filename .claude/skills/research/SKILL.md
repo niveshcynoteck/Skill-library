@@ -2,8 +2,9 @@
 name: research
 
 description: |
-    TRIGGER — invoke whenever the user wants a structured, fact-based writeup on a topic rather than a quick answer: "research X", "look into X", "do a deep dive on X", "compare X vs Y", "what are the pros/cons/tradeoffs of X", "give me a report/overview/landscape of X", "investigate X and summarize findings", or any request implying multiple sources should be checked and organized before answering.
-    SKIP when: the user asks a quick factual question answerable in 1-2 sentences ("what version of X", "does X support Y"); the topic is about THIS codebase/repo (use code-analyzer or Explore instead); or the user explicitly wants raw brainstorming/opinion, not sourced research.
+    TRIGGER — invoke whenever the user wants a structured, fact-based writeup on a topic rather than a quick answer: "research X", "look into X", "do a deep dive on X", "compare X vs Y", "what are the pros/cons/tradeoffs of X", "give me a report/overview/landscape of X", "investigate X and summarize findings", or any request implying multiple sources should be checked and organized before answering. Also invoke when the user hands over existing research and wants it reviewed, critiqued, or improved: "review this research", "what's wrong with this report", "improve this writeup", "analyze this doc and fix it up".
+    SKIP when: the user asks a quick factual question answerable in 1-2 sentences ("what version of X", "does X support Y"); the topic is about THIS codebase/repo.
+
 
 ---
 
@@ -14,48 +15,55 @@ Before starting the research, create a research plan by identifying the key area
 - Present the proposed research plan to the user as 5–7 concise research topics or questions.
 - Organize the topics in a logical order.
 - Tailor the plan to the user's request instead of using a fixed template.
-- Ask the user to review the proposed plan.
-- Allow the user to add, remove, or modify topics.
+- Ask the user to review the proposed plan, and explicitly invite them to contribute their own angles, sources, or priorities — not just react to the proposed list.
 - Revise the plan based on the user's feedback.
 - Continue refining the plan until the user explicitly confirms that they are satisfied with it.
 - Do **not** begin the research until the user has approved the research plan.
 - Once the plan is approved, proceed with the research.
 
 
+## Subskill Delegation
+
+Use the appropriate subskill when the user's request matches its purpose.
+
+### Improve Research
+
+Use the `improve-research` subskill when:
+
+- The user provides existing research and asks to review, improve, update, refine, or correct it.
+- The user asks to find weaknesses, missing information, outdated information, or errors in existing research.
+- The user asks to improve the structure, sources, language, facts, or visual representations of existing research.
+- Do not use the `improve-research` subskill when the user is asking for completely new research.
+
+
 ## Rules 
-- Prefer official documentation and official websites whenever available. 
-- Verify important information using multiple reliable sources. 
-- Do not make up facts or claim anything by your own. 
-- Clearly distinguish facts from opinions. 
-- Use examples whenever required as they improve understanding. 
-- Keep the response well-structured and easy to read. 
-- Write in simple English. Prioritize clarity over complexity and explain technical terms when they are necessary.
-- Use headings, bullet points, tables, and diagrams (where appropriate) to improve clarity. 
-- Include references for important claims. 
+
+- Prefer official documentation and official websites whenever available.
+- Verify important information using multiple reliable sources.
+- Do not make up facts or claim anything by your own.
+- Clearly distinguish facts from opinions.
+- Research each subtopic thoroughly and provide enough detail to give a complete understanding of it.
+- Use examples whenever required as they improve understanding.
+- Keep the response well-structured, clear, and easy to read.
+- Write in simple, natural English. The response should be easy to understand and should not read like an academic thesis.
+- Prioritize clarity and practical understanding over overly formal or complex language.
+- Explain technical terms when they are necessary.
+- Use headings, bullet points, tables, and diagrams (where appropriate) to improve clarity.
+- Include references for important claims.
 - If information cannot be verified, explicitly mention it.
 
-## Visual-First Approach
 
-Take a visual-first approach when preparing the research. Whenever information can be understood more clearly through a visual representation, identify the opportunity and suggest it to the user.
+## Tip: Visual Representations for Better Understanding
 
-Consider visuals for numerical and non-numerical information, including:
+Whenever the research contains information that can be better understood visually (e.g., statistical data, comparisons, workflows, architectures, timelines, processes, or structured data), use the image-maker skill.
 
-- Data, statistics, values, and trends.
-- Comparisons between technologies, products, or concepts.
-- Relationships between concepts or entities.
-- Processes, workflows, and architectures.
-- Timelines and historical developments.
-- Complex or structured information.
+Consider visuals not only for numerical data, but also for comparisons, trends, relationships, processes, workflows, architectures, timelines, and other complex or non-numeric information.
 
-When a visual representation is appropriate:
+- Provide the image-maker skill with the relevant data and context.
+- Allow the image-maker skill to recommend the most suitable visualization format.
+- Embed the generated visual representation whenever it belongs and improves clarity and understanding.
 
-- Provide the `image-maker` skill with the relevant data and context.
-- Allow the `image-maker` skill to recommend the most suitable visualization format.
-- Ask the user whether they want the suggested visual representation to be included.
-- Generate and embed the visual only after the user confirms.
-- Do not generate unnecessary visuals.
-
-**IMPORTANT:** Always consider visual representation before finalizing the research. The user must confirm before any visualization is generated or included.
+**IMPORTANT:** Take a visual-first approach when preparing the research. Identify information that can be understood more clearly through diagrams, charts, flowcharts, timelines, or other visualizations. Recommend the appropriate visuals using the image-maker skill and obtain the user's confirmation before generating them.
 
 
 ## Reference Validation
@@ -69,7 +77,7 @@ Before presenting the final response:
 - Clearly indicate if a reference could not be validated.
 - It is mandatory to validate all links before using them as references in the research.
 
-Save all validated links in a CSV file in the following format as `validated_links.csv`:
+Save all validated links in a CSV file in the following format as `<research_topic>/validated_links.csv`:
 
 | Name | Information | URL | Valid |
 |------|-------------|-----|-------|
@@ -79,17 +87,22 @@ Use this report to ensure that all references included in the final response are
 
 
 ## Response Guidelines
+
 - Organize the content into sections with meaningful headings. 
 - Highlight the important information and facts.
 - Add sections/subsections whenever they improve the explanation.
 
+
 ### For comparison requests 
+
 - Compare items side by side using tables whenever possible. 
 - Compare only relevant characteristics instead of every possible feature. 
 - Highlight similarities, differences, advantages, disadvantages, and trade-offs. 
 - End with a short conclusion explaining when each option is most suitable. 
 
+
 ### For technical topics Consider including topics such as: 
+
 - Architecture 
 - Working principle 
 - Workflow 
@@ -101,7 +114,9 @@ Use this report to ensure that all references included in the final response are
 - Common mistakes 
 - Bibliography
 
+
 ### For non-technical topics Consider including topics such as: |
+
 - Background 
 - History 
 - Key concepts
@@ -113,10 +128,13 @@ Use this report to ensure that all references included in the final response are
 
  **IMPORTANT:** Adapt the report structure to the topic. Do not force every predefined section; include, remove, merge, or introduce sections as appropriate to ensure the research is clear, relevant, and comprehensive.
 
+
 ## Saving the Research 
+
 After generating the response, ask the user whether they want to save it. 
 If the user says **Yes**, follow the procedure described in: 
 `scripts/save_response.sh` 
+
 The script should: 
 - Create an appropriately named folder for the research. 
 - Decide the folder and file structure based on the generated response. 
