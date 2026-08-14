@@ -5,7 +5,6 @@ description: |
     TRIGGER — invoke whenever the user wants a structured, fact-based writeup on a topic rather than a quick answer: "research X", "look into X", "do a deep dive on X", "compare X vs Y", "what are the pros/cons/tradeoffs of X", "give me a report/overview/landscape of X", "investigate X and summarize findings", or any request implying multiple sources should be checked and organized before answering. Also invoke when the user hands over existing research and wants it reviewed, critiqued, or improved: "review this research", "what's wrong with this report", "improve this writeup", "analyze this doc and fix it up".
     SKIP when: the user asks a quick factual question answerable in 1-2 sentences ("what version of X", "does X support Y"); the topic is about THIS codebase/repo.
 
-
 ---
 
 ## Research Planning
