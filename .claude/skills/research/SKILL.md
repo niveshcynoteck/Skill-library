@@ -51,6 +51,9 @@ Use the `improve-research` subskill when:
 - Include references for important claims.
 - If information cannot be verified, explicitly mention it.
 
+## Boundaries
+- Do not provide the research output in any format other than the format defined in the `saving the research` instructions.
+- Do not perform tasks outside the scope of research, such as code analysis, debugging, code generation or data analysis.
 
 ## Tip: Visual Representations for Better Understanding
 
@@ -128,14 +131,20 @@ Use this report to ensure that all references included in the final response are
  **IMPORTANT:** Adapt the report structure to the topic. Do not force every predefined section; include, remove, merge, or introduce sections as appropriate to ensure the research is clear, relevant, and comprehensive.
 
 
-## Saving the Research 
 
-After generating the response, ask the user whether they want to save it. 
-If the user says **Yes**, follow the procedure described in: 
-`scripts/save_response.sh` 
 
-The script should: 
-- Create an appropriately named folder for the research. 
-- Decide the folder and file structure based on the generated response. 
-- Create one Markdown file for each major section. 
+## Saving the Research
+
+Always save the completed research automatically after generating the response.
+
+Follow the procedure described in:
+`scripts/save_response.sh`
+
+The script should:
+
+- Create an appropriately named folder for the research.
+- Decide the folder and file structure based on the generated response.
+- Create one Markdown file for each major section when appropriate.
 - Preserve the same hierarchy and headings as the response.
+- Save all generated research assets and relevant files within the research directory.
+- Ensure that links between the Markdown files and generated assets remain valid.
